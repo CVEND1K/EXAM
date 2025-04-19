@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Всесвіт розробника</title>
+  <link rel="stylesheet" href="devverse.css">
+  <script src="devverse.js" defer></script>
+</head>
+<body>
+  <div class="starfield"></div>
+
+  <!-- Кнопка Назад -->
+  <div class="back-button">
+    <a href="index.html">← Назад</a>
+  </div>
+
+  <div class="container">
+    <h1 class="glow">🌌 Всесвіт розробника</h1>
+    <p class="intro">Ласкаво просимо у простір, де технології, креативність і натхнення перетинаються. Тут ти знайдеш все, що зарядить твою уяву!</p>
+
+    <div class="sections">
+      <div class="card" onclick="reveal('ideas')">💡 Ідеї</div>
+      <div class="card" onclick="reveal('resources')">🧰 Ресурси</div>
+      <div class="card" onclick="reveal('quotes')">✨ Натхнення</div>
+    </div>
+
+    <!-- Секція: Ідеї -->
+    <div id="ideas" class="section-content hidden-content">
+      <h2>Ідеї для розробки</h2>
+      <ul>
+        <li>🧠 Створи космічну гру з процедурною генерацією.</li>
+        <li>🤖 Зроби симулятор ШІ-персонажа з власною логікою поведінки.</li>
+        <li>🕹️ Розроби гру з редактором рівнів для гравців.</li>
+        <li>🔮 Створи генератор квестів для фентезі-гри.</li>
+        <li>🧩 Реалізуй гру, де код пишеться прямо в ігровому процесі.</li>
+      </ul>
+    </div>
+
+    <!-- Секція: Ресурси -->
+    <div id="resources" class="section-content hidden-content">
+      <h2>Корисні ресурси</h2>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <img src="img/unity.png" alt="Unity">
+          <h3>Unity</h3>
+          <p>Движок для створення 2D/3D ігор. Ідеальний для інді-розробників.</p>
+          <a href="https://unity.com/" target="_blank">Перейти</a>
+        </div>
+        <div class="resource-card">
+          <img src="img/ue.png" alt="Unreal Engine">
+          <h3>Unreal Engine</h3>
+          <p>Потужний інструмент для фотореалістичних ігор та VR.</p>
+          <a href="https://www.unrealengine.com/" target="_blank">Перейти</a>
+        </div>
+        <div class="resource-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg" alt="Godot">
+          <h3>Godot</h3>
+          <p>Відкрита альтернатива для 2D/3D проєктів з унікальним підходом.</p>
+          <a href="https://godotengine.org/" target="_blank">Перейти</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Секція: Натхнення -->
+    <div id="quotes" class="section-content hidden-content">
+      <h2>Натхнення</h2>
+      <blockquote>«Код — це поезія логіки.»</blockquote>
+      <blockquote>«Гра — це спосіб розповісти історію, де гравець — її автор.»</blockquote>
+      <blockquote>«Немає обмежень, є лише нові виклики.»</blockquote>
+    </div>
+
+  </div>
+</body>
+</html>
