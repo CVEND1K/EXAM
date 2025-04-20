@@ -1,0 +1,144 @@
+/* Основні стилі */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f1a;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Розділ */
+  .section {
+    padding: 4rem 2rem;
+    background-color: #0f0f1a;
+  }
+  
+  /* Заголовок */
+  .section h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #0ff;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 20px #0ff, 0 0 10px #0ff;
+    letter-spacing: 2px;
+  }
+  
+  /* Опис */
+  .games-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  /* Сітка карток */
+  .game-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Картка гри */
+  .game-card {
+    background: linear-gradient(145deg, #1a1a2e, #161627);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px #5f0fff80;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px #5f0fff, 0 0 10px #0ff;
+  }
+  
+  /* Іконки */
+  .game-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 5px #0ff);
+    transition: transform 0.3s ease;
+  }
+  
+  .game-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Назва гри */
+  .game-card h3 {
+    font-size: 1.5rem;
+    color: #0ff;
+    margin: 0.5rem 0;
+    text-shadow: 0 0 10px #0ff;
+  }
+  
+  /* Опис гри */
+  .game-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+    line-height: 1.4;
+  }
+  
+  /* Кнопка "← Назад" */
+  .back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .back-button a {
+    color: #00f7ff;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #00f7ff;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px #00f7ff66;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .back-button a:hover {
+    background-color: #00f7ff;
+    color: #000;
+    transform: scale(1.1);
+  }
+  
+  /* Адаптація */
+  @media (max-width: 600px) {
+    .section h2 {
+      font-size: 2rem;
+    }
+  
+    .games-intro {
+      font-size: 1rem;
+    }
+  
+    .back-button a {
+      font-size: 1em;
+      padding: 6px 12px;
+    }
+  
+    .game-card {
+      padding: 1rem;
+    }
+  
+    .game-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .game-card img {
+      width: 64px;
+    }
+  }
+  
